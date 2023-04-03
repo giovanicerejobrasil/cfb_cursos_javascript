@@ -6,8 +6,11 @@ class Login {
     static styleCSS = null;
     static callbackOK = null;
     static callbackNotOK = null;
-    static config = {color: '#2961b6', image: '../images/js_logo.png'};
-    static endpoint = null;
+    static config = {
+        color: '#2961b6',
+        image: '../images/js_logo.png',
+        endpoint: null
+    };
 
     static login = (callbackOK, callbackNotOK, config = null) => {
         if (config) {
