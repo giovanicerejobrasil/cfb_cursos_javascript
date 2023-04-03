@@ -5,6 +5,11 @@ export default class Login {
     static config = {color: null, image: null, endpoint: null};
 
     static login = (callbackOK, callbackNotOK, config) => {
+        sessionStorage.setItem('logged', 'false');
+        sessionStorage.setItem('registrationLogged', '');
+        sessionStorage.setItem('nameLogged', '');
+        sessionStorage.setItem('accessLogged', '');
+        
         if (config) {
             this.config = config;
         }
@@ -115,6 +120,10 @@ export default class Login {
         btnCancel.id = 'btnCancel';
         btnCancel.innerText = 'Cancelar';
         btnCancel.addEventListener('click', () => {
+            sessionStorage.setItem('logged', 'false');
+            sessionStorage.setItem('registrationLogged', '');
+            sessionStorage.setItem('nameLogged', '');
+            sessionStorage.setItem('accessLogged', '');
             this.closeLogin();
         });
 
