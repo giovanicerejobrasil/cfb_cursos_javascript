@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>EXERCÍCO SOBRE CLASSES</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="criarCarro" id="criarCarro">
+        <div class="campoForm">
+            <label for="fNome">Nome</label>
+            <input id="fNome" name="fNome" type="text" value="">
+        </div>
+
+        <div class="campoForm">
+            <label for="fPortas">Portas</label>
+            <input id="fPortas" name="fPortas" type="number" value="0">
+        </div>
+
+        <div class="campoForm">
+            <label for="fBlindagem">Blindagem</label>
+            <input disabled id="fBlindagem" name="fBlindagem" type="number" value="0">
+        </div>
+
+        <div class="campoForm">
+            <label for="fMunicao">Munição</label>
+            <input disabled id="fMunicao" name="fMunicao" type="number" value="0">
+        </div>
+
+        <div class="campoForm">
+            <label for="fPortas">Tipo</label>
+            <div class="radio">
+                <input id="fTipoMilitar" name="fTipo" type="radio" value="m">&nbsp;Militar
+            </div>
+
+            <div class="radio">
+                <input checked id="fTipoNormal" name="fTipo" type="radio" value="m">&nbsp;Normal
+            </div>
+        </div>
+
+        <div class="campoForm">
+            <button id="btnAddCarro" type="button">Adicionar</button>
+        </div>
+    </div>
+
+    <div class="carros" id="carros">
+
+    </div>
+
+    <script src="exercicio_classes.js"></script>
+</body>
+</html>

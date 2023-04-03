@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>MÉTODO TOGGLE</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="caixa" id="caixaNovoFuncionalidade">
+            <div class="caixaFuncionalidades" id="caixaNovoCurso">
+                <label>Nome do Curso</label>
+                <input id="nomeCurso" name="nomeCurso" type="text">
+                <button id="btnAdicionarAntesNovoCurso">Adicionar Antes</button>
+                <button id="btnAdicionarDepoisNovoCurso">Adicionar Depois</button>
+            </div>
+
+            <div class="caixaFuncionalidades" id="caixaRemoverCurso">
+                <button id="btnRemoverCurso" type="button">Remover Selecionado</button>
+            </div>
+
+            <div class="caixaFuncionalidades" id="caixaCursoSelecionado">
+                <button id="btnCursoSelecionado" type="button">Curso Selecionado</button>
+            </div>
+
+        </div>
+
+        <div class="caixa" id="caixaCursos">
+            <!-- Cursos Add -->
+        </div>
+    </main>
+
+    <script src="metodo_toggle.js"></script>
+</body>
+</html>

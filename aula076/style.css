@@ -1,0 +1,36 @@
+* {
+    font-family: monospace;
+}
+
+.numero {
+    font-size: 4em;
+}
+
+.ok {
+    color: #0000ff;
+}
+
+.erro {
+    color: #ff0000;
+}
+
+.help-text {
+    display: block;
+    font-size: 1.3em;
+}
+
+#btn_promessa {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #25313b;
+    color: #eeeeee;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#btn_promessa:hover {
+    background-color: #3e5f70;
+}

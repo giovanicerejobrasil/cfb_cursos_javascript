@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+}
+
+body {
+
+}
+
+.controles {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    background-color: #eeeeee;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.controle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #ffffff;
+    border: 2px solid #888888;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+label {
+    font-size: .6rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    background-color: #888888;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: .7rem;
+}
+
+input[type="number"], #numObjetos {
+    border: 1px solid #000000;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    font-size: .7rem;
+}
+
+.palco {
+    display: flex;
+    width: 100%;
+    min-height: calc(100% - 118px);
+    background-color: #eeeeee;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.bola {
+    position: absolute;
+    border-radius: 50%;
+}

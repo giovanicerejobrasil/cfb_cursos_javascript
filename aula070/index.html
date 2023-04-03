@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>EXERCÍCO CALCULADORA</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+          rel="stylesheet"/>
+    <script defer src="exercico_calculadora.js"></script>
+</head>
+<body>
+    <div class="calc dFlex" id="calc">
+        <div class="calc_principal dFlex" id="calc_principal">
+            <div class="div_nome dFlex" id="div_nome">
+                <p>Calcularora Javascript</p>
+            </div>
+
+            <div class="div_display dFlex" id="div_display">
+                <p class="display" id="display">0</p>
+            </div>
+
+            <div class="div_teclas dFlex" id="div_teclas">
+                <button class="tecla dFlex teclaOp" id="tCopy">CPY</button>
+                <button class="tecla dFlex" id="tLimpar">C</button>
+                <button class="tecla dFlex num" id="tAbreP">(</button>
+                <button class="tecla dFlex num" id="tFechaP">)</button>
+                <button class="tecla dFlex num" id="t7">7</button>
+                <button class="tecla dFlex num" id="t8">8</button>
+                <button class="tecla dFlex num" id="t9">9</button>
+                <button class="tecla dFlex teclaOp op" id="tSoma">+</button>
+                <button class="tecla dFlex num" id="t4">4</button>
+                <button class="tecla dFlex num" id="t5">5</button>
+                <button class="tecla dFlex num" id="t6">6</button>
+                <button class="tecla dFlex teclaOp op" id="tSubtracao">-</button>
+                <button class="tecla dFlex num" id="t1">1</button>
+                <button class="tecla dFlex num" id="t2">2</button>
+                <button class="tecla dFlex num" id="t3">3</button>
+                <button class="tecla dFlex teclaOp op" id="tMultiplicacao">x</button>
+                <button class="tecla dFlex num" id="t0">0</button>
+                <button class="tecla dFlex num" id="tSeparador">.</button>
+                <button class="tecla dFlex teclaOp res" id="tIgual">=</button>
+                <button class="tecla dFlex teclaOp op" id="tDivisao">/</button>
+            </div>
+        </div>
+
+        <div class="calc_aba dFlex" id="calc_aba">
+            <span class="material-symbols-outlined calc_aba_icon_right" id="calc_aba_icon"></span>
+        </div>
+    </div>
+</body>
+</html>

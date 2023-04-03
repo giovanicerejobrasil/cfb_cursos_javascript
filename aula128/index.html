@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>GRÁFICOS EM JAVASCRIPT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="graficos.js" defer></script>
+</head>
+<body>
+    <div class="graficos">
+        <canvas id="grafico1"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('grafico1');
+        const endpoint = 'https://chartJS.giovanicerejobr.repl.co';
+
+        let labels = ['Disponibilidade', 'Qualidade', 'Perfomace'];
+        let values = [0, 0, 0];
+
+        const getDados = () => {
+            fetch(endpoint)
+                .then(resp => resp.json())
+                .then(ret => {
+                    values[0] = ret.disponibilidade;
+                    values[1] = ret.qualidade;
+                    values[2] = ret.performace;
+                    grafico.update();
+                })
+                .catch(error => {
+                    console.log('ERROR: ' + error);
+                })
+        };
+
+        let interval = setInterval(getDados, 2000);
+
+        let grafico = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Valores',
+                    data: values,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

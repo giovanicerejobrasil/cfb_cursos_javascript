@@ -1,0 +1,12 @@
+.numero {
+    font-family: monospace;
+    font-size: 3em;
+}
+
+.ok {
+    color: #0000ff;
+}
+
+.erro {
+    color: #ff0000;
+}

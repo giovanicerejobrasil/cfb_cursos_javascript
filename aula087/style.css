@@ -1,0 +1,39 @@
+* {
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+input, button {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+input[type="url"] {
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #eeeeee;
+    padding: 5px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}

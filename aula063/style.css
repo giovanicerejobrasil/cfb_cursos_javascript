@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+.carros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    border: 3px solid #000000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.carro {
+    border: 3px solid #008;
+    background-color: #8cf;
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.criarCarro {
+    margin: 15px;
+}
+
+.campoForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.campoForm input {
+    background-color: #eeeeee;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+}
+
+.campoForm button {
+    background-color: #888888;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btnRemover {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #a52834;
+    color: #ffffff;
+    margin-top: 5px;
+    font-size: .8em;
+}

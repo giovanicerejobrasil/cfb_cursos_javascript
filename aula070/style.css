@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+body {
+    background-color: #444444;
+}
+
+.dFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CALC */
+.calc {
+    position: absolute;
+    /*top: 0;*/
+    left: calc(260px * -1);
+    transition: all .8s;
+}
+
+.calc_exibir {
+    left: 0 !important;
+}
+
+.calc_aba {
+    width: 20px;
+    height: 50px;
+    background-color: rgba(210, 210, 210, 0.2);
+    border-radius: 0px 5px 5px 0;
+    cursor: pointer;
+}
+
+.calc_aba_icon_right::after {
+    content: 'chevron_right';
+    transition: all .5s;
+}
+
+.calc_aba_icon_left::after {
+    content: 'chevron_left';
+    transition: all .5s;
+}
+
+.calc_principal {
+    flex-direction: column;
+    background-color: #eeeeee;
+    border: 3px solid #bbb;
+    border-radius: 10px;
+    width: 260px;
+    padding: 20px;
+}
+
+/* TITULO */
+.div_nome {
+    width: 220px;
+    color: #1a1e21;
+    margin-bottom: 10px;
+}
+
+/* TECLA */
+.div_teclas {
+    width: 220px;
+    flex-wrap: wrap;
+}
+
+.tecla {
+    background-color: #aaaaaa;
+    border: 3px solid #888888;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.teclaOp {
+    background-color: #f44 !important;
+    border-color: #800 !important;
+}
+
+#tLimpar {
+    background-color: #ffbf2e;
+    border-color: #93700f;
+}
+
+/* DISPLAY */
+.div_display {
+    width: 220px;
+    margin-bottom: 10px;
+}
+
+.display {
+    overflow-x: auto;
+    width: 220px;
+    background-color: #aaaaaa;
+    color: #1a1e21;
+    text-align: right;
+    padding: 5px;
+    font-family: monospace;
+}

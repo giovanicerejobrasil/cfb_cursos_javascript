@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.group {
+    display: flex;
+    flex-direction: row;
+    background-color: #888888;
+}
+
+.group button {
+    background-color: #444444;
+    color: #eeeeee;
+    font-size: 2rem;
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.group button:hover {
+    background-color: #6e6e6e;
+}
+
+.group button:active {
+    background-color: #492d2d;
+}
+
+#rectangle {
+    margin: 10px 1px;
+    background-color: #a52834;
+}
