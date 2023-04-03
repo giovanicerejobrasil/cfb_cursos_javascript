@@ -2,7 +2,7 @@ import Login from "./login_screen.js";
 import {BoxMessage} from "../aula135/boxMessage.js";
 
 const callbackOK = () => {
-    
+
 }
 
 const callbackNotOK = () => {
